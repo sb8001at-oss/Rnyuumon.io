@@ -1,2 +1,6 @@
 plugins:
+<<<<<<< HEAD
   - jekyll-sitemap
+=======
+  - jekyll-sitemap
+>>>>>>> 0416c2dc73037d348b1b0e1e4f2e715ce0cc82da
