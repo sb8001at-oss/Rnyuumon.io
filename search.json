@@ -3710,7 +3710,7 @@
     "href": "references.html#rmarkdownquarto",
     "title": "参考文献",
     "section": "Rmarkdown・Quarto",
-    "text": "Rmarkdown・Quarto\n\n再現可能性のすゝめ (Wonderful R 3) (高橋康介. and 石田 2018)\n\n\n\n\n\nRmarkdownについて一冊読むのであれば、この教科書が初心者でも読みやすいでしょう。RstudioとRmarkdownを用いた手法が一通り説明されています。やや独特の言い回しが多いので気になるかもしれませんが、手元に置いておけばRでのレポート制作の役に立つでしょう。\nRmarkdownについての教科書は他にも数冊出ていますので、手に取ってみて肌に合うものを読んでみるとよいと思います。\n\n\nR Markdown: The Definitive Guide (J. J. Allaire and Grolemund 2023)\n\n\n\n\n\n英語でも良ければR markdownの開発者であるDr. Yihui Xie謹製のこちらの教科書を読むのが良いでしょう。また、この教科書を日本語に翻訳したものも公開されています。こちらからR Markdownに入門するのもよいでしょう。\nこの教科書を含め、Posit.ioが公表している教科書はほぼすべてbookdownパッケージ(Xie 2024, 2016)、もしくはこの機能を引き継いだQuartoで作成されています。このR入門もQuartoで作成している教科書です。bookdownで作成された教科書の一覧も公開されていますので、R markdownだけでなく他のRの教科書を探すのにも便利です。\nQuartoについてはあまり良い教科書がありません。QuartoのGuideを読むのが最も簡単に学ぶ方法だと思います。34章や上で紹介した日本語の教科書(宋 and 矢内 2020)から入門するのが最もよいでしょう。",
+    "text": "Rmarkdown・Quarto\n\n再現可能性のすゝめ (Wonderful R 3) (高橋康介. and 石田 2018)\n\n\n\n\n\nRmarkdownについて一冊読むのであれば、この教科書が初心者でも読みやすいでしょう。RstudioとRmarkdownを用いた手法が一通り説明されています。やや独特の言い回しが多いので気になるかもしれませんが、手元に置いておけばRでのレポート制作の役に立つでしょう。\nRmarkdownについての教科書は他にも数冊出ていますので、手に取ってみて肌に合うものを読んでみるとよいと思います。\n\n\nR Markdown: The Definitive Guide (J. J. Allaire and Grolemund 2023)\n\n\n\n\n\n英語でも良ければR markdownの開発者であるDr. Yihui Xie謹製のこちらの教科書を読むのが良いでしょう。また、この教科書を日本語に翻訳したものも公開されています。こちらからR Markdownに入門するのもよいでしょう。\nこの教科書を含め、Posit.ioが公表している教科書はほぼすべてbookdownパッケージ(Xie 2024, 2016)、もしくはこの機能を引き継いだQuartoで作成されています。このR入門もQuartoで作成している教科書です。bookdownで作成された教科書の一覧も公開されていますので、R markdownだけでなく他のRの教科書を探すのにも便利です。\nQuartoについてはあまり良い教科書がありません。QuartoのGuideを読むのが最も簡単に学ぶ方法だと思います。上で紹介した日本語の教科書(宋 and 矢内 2020)にはQuartoについての詳しい記載があります。",
     "crumbs": [
       "参考文献"
     ]
