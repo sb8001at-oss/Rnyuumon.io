@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R入門 - 4&nbsp; 変数と定数</title>
+<title>R入門 - 4&nbsp; 変数</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,7 +130,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Rプログラミングの基礎</a></li><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数と定数</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Rプログラミングの基礎</a></li><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -226,7 +226,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter4.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数と定数</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -507,20 +507,17 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#変数" id="toc-変数" class="nav-link active" data-scroll-target="#変数"><span class="header-section-number">4.1</span> 変数</a>
-  <ul>
-  <li><a href="#変数と定数" id="toc-変数と定数" class="nav-link" data-scroll-target="#変数と定数"><span class="header-section-number">4.1.1</span> 変数と定数</a></li>
-  <li><a href="#値渡しと参照渡し" id="toc-値渡しと参照渡し" class="nav-link" data-scroll-target="#値渡しと参照渡し"><span class="header-section-number">4.1.2</span> 値渡しと参照渡し</a></li>
-  </ul></li>
+  <li><a href="#変数と定数" id="toc-変数と定数" class="nav-link active" data-scroll-target="#変数と定数"><span class="header-section-number">4.1</span> 変数と定数</a></li>
+  <li><a href="#値渡しと参照渡し" id="toc-値渡しと参照渡し" class="nav-link" data-scroll-target="#値渡しと参照渡し"><span class="header-section-number">4.2</span> 値渡しと参照渡し</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Rプログラミングの基礎</a></li><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数と定数</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter1.html">Rプログラミングの基礎</a></li><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数と定数</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">変数</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -537,8 +534,6 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </header>
 
 
-<section id="変数" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="変数"><span class="header-section-number">4.1</span> 変数</h2>
 <p>ココまでは、数値や文字列などの、単純なオブジェクトについて説明してきました。単純なオブジェクトはプログラミングの要素として重要です。しかし、オブジェクトを毎回作成し直すのは面倒です。オブジェクトを作ったら、それを一時的に保管しておいて、後から演算に使える方が便利です。</p>
 <p>電卓では、このような「一時的に結果を記録する」方法として、メモリー機能があります。Excelなどでは、計算結果をセルに記録しておくこともあるでしょう。プログラミング言語にも、計算結果を一時的に保管しておくものが準備されています。この「計算結果を一時的に保管しておくもの」のことを、プログラミング言語では<strong>変数</strong>と呼びます。</p>
 <p>変数には名前がついています。名前付きの箱の中にオブジェクトを入れているようなものが変数です。下の図では、変数「<code>dog</code>」にオブジェクト「<code>"犬"</code>」を入れています。「<code>"犬"</code>」を取り出して使いたいときには、変数である「<code>dog</code>」を持ってくればよい、ということになります。</p>
@@ -622,8 +617,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "calc"   "dog"    "number"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<section id="変数と定数" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="変数と定数"><span class="header-section-number">4.1.1</span> 変数と定数</h3>
+<section id="変数と定数" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="変数と定数"><span class="header-section-number">4.1</span> 変数と定数</h2>
 <p>変数のうち、一度代入したら中身を変えられないもののことを<strong>定数</strong>と呼びます。他のプログラミング言語では定数を設定できるものが多いのですが、Rには定数を設定する方法はありません。変数の中身はいつでも置き換えできます。変数を置き換えると、置き換えに用いたオブジェクトの型・クラスに従い、変数の型・クラスも置き換わります。</p>
 <div class="cell">
 <div class="code-with-filename">
@@ -687,8 +682,8 @@ Rにおけるデータ型の変換
 </div>
 </div>
 </section>
-<section id="値渡しと参照渡し" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="値渡しと参照渡し"><span class="header-section-number">4.1.2</span> 値渡しと参照渡し</h3>
+<section id="値渡しと参照渡し" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="値渡しと参照渡し"><span class="header-section-number">4.2</span> 値渡しと参照渡し</h2>
 <p>Rでは、変数への代入が行われるたびに、その変数に対するメモリのアドレスを新規に作成し直す、という特徴があるため、他の言語で理解が必要となる値渡しと参照渡しの問題がほとんど起きません。</p>
 <div class="cell">
 <div class="code-with-filename">
@@ -727,7 +722,6 @@ Rにおけるデータ型の変換
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">図2：変数のイメージ</span>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1347,7 +1341,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 変数と定数</span></span>
+<div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 変数</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, setup, include=FALSE, echo=FALSE}</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
@@ -1355,130 +1349,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## 変数</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>ココまでは、数値や文字列などの、単純なオブジェクトについて説明してきました。単純なオブジェクトはプログラミングの要素として重要です。しかし、オブジェクトを毎回作成し直すのは面倒です。オブジェクトを作ったら、それを一時的に保管しておいて、後から演算に使える方が便利です。</span>
 <span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>ココまでは、数値や文字列などの、単純なオブジェクトについて説明してきました。単純なオブジェクトはプログラミングの要素として重要です。しかし、オブジェクトを毎回作成し直すのは面倒です。オブジェクトを作ったら、それを一時的に保管しておいて、後から演算に使える方が便利です。</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>電卓では、このような「一時的に結果を記録する」方法として、メモリー機能があります。Excelなどでは、計算結果をセルに記録しておくこともあるでしょう。プログラミング言語にも、計算結果を一時的に保管しておくものが準備されています。この「計算結果を一時的に保管しておくもの」のことを、プログラミング言語では**変数**と呼びます。</span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>電卓では、このような「一時的に結果を記録する」方法として、メモリー機能があります。Excelなどでは、計算結果をセルに記録しておくこともあるでしょう。プログラミング言語にも、計算結果を一時的に保管しておくものが準備されています。この「計算結果を一時的に保管しておくもの」のことを、プログラミング言語では**変数**と呼びます。</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>変数には名前がついています。名前付きの箱の中にオブジェクトを入れているようなものが変数です。下の図では、変数「<span class="in">`dog`</span>」にオブジェクト「<span class="in">`"犬"`</span>」を入れています。「<span class="in">`"犬"`</span>」を取り出して使いたいときには、変数である「<span class="in">`dog`</span>」を持ってくればよい、ということになります。</span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>変数には名前がついています。名前付きの箱の中にオブジェクトを入れているようなものが変数です。下の図では、変数「<span class="in">`dog`</span>」にオブジェクト「<span class="in">`"犬"`</span>」を入れています。「<span class="in">`"犬"`</span>」を取り出して使いたいときには、変数である「<span class="in">`dog`</span>」を持ってくればよい、ということになります。</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="al">![図2：変数のイメージ](./image/variable_image.png)</span></span>
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="al">![図2：変数のイメージ](./image/variable_image.png)</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>Rで変数を作成する場合には、変数名に「<span class="in">`&lt;-`</span>」の記号でオブジェクトを**代入**します。</span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>Rで変数を作成する場合には、変数名に「<span class="in">`&lt;-`</span>」の記号でオブジェクトを**代入**します。</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数への代入"}</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- "inu" # dogという変数に"inu"という文字列を代入する</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="in">number &lt;- 1 # numberという変数に、1という数値を代入する</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="in">dog # 変数dogには"inu"が入っている</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="in">number # 変数numberには1が入っている</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数への代入"}</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- "inu" # dogという変数に"inu"という文字列を代入する</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="in">number &lt;- 1 # numberという変数に、1という数値を代入する</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="in">dog # 変数dogには"inu"が入っている</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="in">number # 変数numberには1が入っている</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>変数には型・クラスがあり、代入したオブジェクトと同じ型・クラスを持つことになります。また、変数はそのまま演算に用いることができます。</span>
 <span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>変数には型・クラスがあり、代入したオブジェクトと同じ型・クラスを持つことになります。また、変数はそのまま演算に用いることができます。</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の型", error=TRUE}</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # dogの中身は文字列</span></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の型", error=TRUE}</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # dogの中身は文字列</span></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="in">mode(number) # numberの中身は数値</span></span>
 <span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="in">mode(number) # numberの中身は数値</span></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="in">paste(dog, "walk") # dogの中身と"walk"をつなぐ</span></span>
 <span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="in">paste(dog, "walk") # dogの中身と"walk"をつなぐ</span></span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="in">number + 5 # numberの中身に5を足す</span></span>
 <span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a><span class="in">number + 5 # numberの中身に5を足す</span></span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="in">dog + 1 # dogの中身は文字列なので、足し算はできない</span></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a><span class="in">dog + 1 # dogの中身は文字列なので、足し算はできない</span></span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>変数への代入は、「<span class="in">`=`</span>」や「<span class="in">`-&gt;`</span>」の演算子によっても行うことができます。ただし、これらを代入に用いると、プログラムを読み解くのが難しくなるため、Rでは「<span class="in">`&lt;-`</span>」を用いることが推奨されています。</span>
 <span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>変数への代入は、「<span class="in">`=`</span>」や「<span class="in">`-&gt;`</span>」の演算子によっても行うことができます。ただし、これらを代入に用いると、プログラムを読み解くのが難しくなるため、Rでは「<span class="in">`&lt;-`</span>」を用いることが推奨されています。</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="=や-&gt;による代入"}</span></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a><span class="in">dog = "犬" # イコールも代入に使うことができる</span></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a><span class="in">2 -&gt; number # -&gt;も代入に使える（方向は&lt;-と逆になる）</span></span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="=や-&gt;による代入"}</span></span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a><span class="in">dog = "犬" # イコールも代入に使うことができる</span></span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a><span class="in">2 -&gt; number # -&gt;も代入に使える（方向は&lt;-と逆になる）</span></span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a><span class="in">dog</span></span>
 <span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a><span class="in">dog</span></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a><span class="in">number</span></span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a><span class="in">number</span></span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>演算結果を変数に代入すると、どのようなものが変数に代入されるのかよくわからないときがあります。このような場合には、変数の代入に関する式をすべてカッコで囲うとよいでしょう。カッコで囲うことで、代入される値を表示させることができます。</span>
 <span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>演算結果を変数に代入すると、どのようなものが変数に代入されるのかよくわからないときがあります。このような場合には、変数の代入に関する式をすべてカッコで囲うとよいでしょう。カッコで囲うことで、代入される値を表示させることができます。</span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="カッコで囲うと変数の中身を表示する"}</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="in">(calc &lt;- log(2) + log(3))</span></span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="カッコで囲うと変数の中身を表示する"}</span></span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="in">(calc &lt;- log(2) + log(3))</span></span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>定義されている変数の一覧を確認するには、<span class="in">`ls`</span>関数を用います。</span>
 <span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>定義されている変数の一覧を確認するには、<span class="in">`ls`</span>関数を用います。</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の確認"}</span></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a><span class="in">ls()</span></span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の確認"}</span></span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a><span class="in">ls()</span></span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="fu">## 変数と定数</span></span>
 <span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a><span class="fu">### 変数と定数</span></span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>変数のうち、一度代入したら中身を変えられないもののことを**定数**と呼びます。他のプログラミング言語では定数を設定できるものが多いのですが、Rには定数を設定する方法はありません。変数の中身はいつでも置き換えできます。変数を置き換えると、置き換えに用いたオブジェクトの型・クラスに従い、変数の型・クラスも置き換わります。</span>
 <span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>変数のうち、一度代入したら中身を変えられないもののことを**定数**と呼びます。他のプログラミング言語では定数を設定できるものが多いのですが、Rには定数を設定する方法はありません。変数の中身はいつでも置き換えできます。変数を置き換えると、置き換えに用いたオブジェクトの型・クラスに従い、変数の型・クラスも置き換わります。</span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の置き換え"}</span></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- "inu" # 変数に文字列を代入</span></span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # 型は文字列になる</span></span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- 1 # 変数に数値を入れ直す</span></span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # 変数の型は数値になる</span></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="変数の置き換え"}</span></span>
+<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- "inu" # 変数に文字列を代入</span></span>
+<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # 型は文字列になる</span></span>
+<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="in">dog &lt;- 1 # 変数に数値を入れ直す</span></span>
+<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a><span class="in">mode(dog) # 変数の型は数値になる</span></span>
+<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse="true"}</span>
 <span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse="true"}</span>
+<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rにおけるデータ型の変換</span></span>
 <span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rにおけるデータ型の変換</span></span>
+<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>多くのプログラミング言語では、上記のように変数の型が変化するのを抑える仕組み（型宣言）を持っています。型宣言が必要な言語では、変数は厳密に型のチェックを受けます（静的型付け）。Rにはこのような仕組みがなく、代入されたオブジェクトに従って型が決まり、型チェックされることなくプログラムが実行されます。このような言語のことを動的型付けと呼びます。</span>
 <span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>多くのプログラミング言語では、上記のように変数の型が変化するのを抑える仕組み（型宣言）を持っています。型宣言が必要な言語では、変数は厳密に型のチェックを受けます（静的型付け）。Rにはこのような仕組みがなく、代入されたオブジェクトに従って型が決まり、型チェックされることなくプログラムが実行されます。このような言語のことを動的型付けと呼びます。</span>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>プログラム中で変数の型が変わると、バグの原因となります。Rでは、プログラムを書いているうちに変数の型が変化していて、正しい計算結果が得られない、ということがたびたび起きます。変数の型を常に確認しながらプログラミングした方がよいでしょう。</span>
 <span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>プログラム中で変数の型が変わると、バグの原因となります。Rでは、プログラムを書いているうちに変数の型が変化していて、正しい計算結果が得られない、ということがたびたび起きます。変数の型を常に確認しながらプログラミングした方がよいでしょう。</span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>定数とは少し異なりますが、Rでは代入なしに使える変数もあります。例えば、円周率のπは「<span class="in">`pi`</span>」という変数名で始めから登録されています。このような変数にも別のオブジェクトを代入することはできますが、後々混乱する原因となるため避けたほうがよいでしょう。</span>
 <span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>定数とは少し異なりますが、Rでは代入なしに使える変数もあります。例えば、円周率のπは「<span class="in">`pi`</span>」という変数名で始めから登録されています。このような変数にも別のオブジェクトを代入することはできますが、後々混乱する原因となるため避けたほうがよいでしょう。</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>また、統計手法を試すためのデータが代入されている変数（データセット）もたくさん設定されています。データセットについては、<span class="co">[</span><span class="ot">18章</span><span class="co">](./chapter18.html)</span>で詳しく説明します。</span>
 <span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>また、統計手法を試すためのデータが代入されている変数（データセット）もたくさん設定されています。データセットについては、<span class="co">[</span><span class="ot">18章</span><span class="co">](./chapter18.html)</span>で詳しく説明します。</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="あらかじめ設定されている変数"}</span></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="in">pi # 円周率</span></span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="あらかじめ設定されている変数"}</span></span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="in">pi # 円周率</span></span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="in">letters # アルファベット（小文字）</span></span>
 <span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="in">letters # アルファベット（小文字）</span></span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="in">LETTERS # アルファベット（大文字）</span></span>
 <span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="in">LETTERS # アルファベット（大文字）</span></span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="in">month.abb # 月（短縮表記）</span></span>
 <span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a><span class="in">month.abb # 月（短縮表記）</span></span>
+<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a><span class="in">month.name # 月</span></span>
 <span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a><span class="in">month.name # 月</span></span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a><span class="in">pi &lt;- 3 # piに3を代入する</span></span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a><span class="in">pi # piは3になってしまう</span></span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a><span class="in">pi &lt;- 3.14159265358979 # 紛らわしいので元に戻しておく</span></span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a><span class="in">pi &lt;- 3 # piに3を代入する</span></span>
+<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a><span class="in">pi # piは3になってしまう</span></span>
+<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
+<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a><span class="in">pi &lt;- 3.14159265358979 # 紛らわしいので元に戻しておく</span></span>
+<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## 値渡しと参照渡し</span></span>
 <span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### 値渡しと参照渡し</span></span>
+<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a>Rでは、変数への代入が行われるたびに、その変数に対するメモリのアドレスを新規に作成し直す、という特徴があるため、他の言語で理解が必要となる値渡しと参照渡しの問題がほとんど起きません。</span>
 <span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>Rでは、変数への代入が行われるたびに、その変数に対するメモリのアドレスを新規に作成し直す、という特徴があるため、他の言語で理解が必要となる値渡しと参照渡しの問題がほとんど起きません。</span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="値渡し"}</span></span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a><span class="in">x &lt;- 1 # xに1を代入</span></span>
-<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a><span class="in">y &lt;- x # yにxを代入（yとxはメモリを共有）</span></span>
-<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a><span class="in">x &lt;- 2 # xに2を代入（xのメモリのアドレスが変わる）</span></span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="in">x # xは新しいアドレスを参照（2が返ってくる）</span></span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a><span class="in">y # yは古いアドレスを参照（1が返ってくる）</span></span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, filename="値渡し"}</span></span>
+<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a><span class="in">x &lt;- 1 # xに1を代入</span></span>
+<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a><span class="in">y &lt;- x # yにxを代入（yとxはメモリを共有）</span></span>
+<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a><span class="in">x &lt;- 2 # xに2を代入（xのメモリのアドレスが変わる）</span></span>
+<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a><span class="in">x # xは新しいアドレスを参照（2が返ってくる）</span></span>
+<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a><span class="in">y # yは古いアドレスを参照（1が返ってくる）</span></span>
+<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse="true"}</span>
 <span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip collapse="true"}</span>
+<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a><span class="fu">## 参照渡し</span></span>
 <span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a><span class="fu">### 参照渡し</span></span>
+<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a>上のコードでは、参照渡しであれば、xの値が2になった場合、xとメモリを共有しているyも2になります。Rでは、代入時にメモリのアドレスが別に準備されるため（値渡し）、参照渡しが起こることは基本的にありません。この特徴はプログラミング初心者には優しいのですが、変数の変更のたびにメモリ上にオブジェクトを新規作成するため、Rの実行速度が遅い原因になります。</span>
 <span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a>上のコードでは、参照渡しであれば、xの値が2になった場合、xとメモリを共有しているyも2になります。Rでは、代入時にメモリのアドレスが別に準備されるため（値渡し）、参照渡しが起こることは基本的にありません。この特徴はプログラミング初心者には優しいのですが、変数の変更のたびにメモリ上にオブジェクトを新規作成するため、Rの実行速度が遅い原因になります。</span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1498,7 +1490,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
