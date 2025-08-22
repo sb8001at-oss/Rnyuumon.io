@@ -1,203 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/index.html</loc>
-    <lastmod>2025-06-28T22:52:56.371Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter1.html</loc>
-    <lastmod>2025-06-28T22:56:43.645Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter2.html</loc>
-    <lastmod>2025-06-28T22:59:29.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter3.html</loc>
-    <lastmod>2025-06-28T23:13:14.690Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter4.html</loc>
-    <lastmod>2025-06-28T23:19:16.952Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter5.html</loc>
-    <lastmod>2025-06-28T23:23:01.850Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter6.html</loc>
-    <lastmod>2025-06-28T23:13:55.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter7.html</loc>
-    <lastmod>2025-06-29T09:57:39.637Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter8.html</loc>
-    <lastmod>2025-06-29T10:06:49.068Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter9.html</loc>
-    <lastmod>2025-05-31T00:15:19.662Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter10.html</loc>
-    <lastmod>2025-06-29T10:15:24.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter11.html</loc>
-    <lastmod>2025-03-16T00:06:46.432Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter12.html</loc>
-    <lastmod>2025-06-29T10:23:39.685Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter13.html</loc>
-    <lastmod>2024-10-19T08:11:47.462Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter14.html</loc>
-    <lastmod>2025-04-18T22:33:43.476Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter15.html</loc>
-    <lastmod>2025-04-25T11:47:10.569Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter16.html</loc>
-    <lastmod>2025-05-01T23:33:59.167Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter17.html</loc>
-    <lastmod>2025-06-29T10:46:38.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter18.html</loc>
-    <lastmod>2025-05-01T12:45:32.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter19.html</loc>
-    <lastmod>2025-06-30T00:08:42.066Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter20.html</loc>
-    <lastmod>2025-06-30T00:19:02.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter21.html</loc>
-    <lastmod>2025-06-30T00:24:33.534Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter22.html</loc>
-    <lastmod>2025-06-30T00:31:59.598Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter23.html</loc>
-    <lastmod>2025-06-30T00:41:30.077Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter24.html</loc>
-    <lastmod>2025-06-30T00:45:13.972Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter25.html</loc>
-    <lastmod>2025-06-30T00:49:53.154Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter26.html</loc>
-    <lastmod>2025-06-30T00:59:53.694Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter27.html</loc>
-    <lastmod>2025-03-28T22:42:22.139Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter28.html</loc>
-    <lastmod>2025-04-23T11:14:41.297Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter29.html</loc>
-    <lastmod>2025-06-30T01:17:21.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter30.html</loc>
-    <lastmod>2025-06-30T01:39:55.263Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter31.html</loc>
-    <lastmod>2025-06-30T01:46:52.752Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter32.html</loc>
-    <lastmod>2025-06-30T01:51:27.032Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter33.html</loc>
-    <lastmod>2025-06-30T01:59:07.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter34.html</loc>
-    <lastmod>2025-06-30T02:10:56.782Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter35.html</loc>
-    <lastmod>2025-06-30T02:12:12.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter36.html</loc>
-    <lastmod>2025-06-30T08:16:32.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter37.html</loc>
-    <lastmod>2025-06-30T09:03:02.633Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter38.html</loc>
-    <lastmod>2025-06-30T10:31:51.512Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter39.html</loc>
-    <lastmod>2025-06-30T11:17:51.616Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter40.html</loc>
-    <lastmod>2025-07-01T11:54:44.513Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter41.html</loc>
-    <lastmod>2025-07-01T11:51:35.695Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter42.html</loc>
-    <lastmod>2025-06-30T04:01:15.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter43.html</loc>
-    <lastmod>2025-07-01T11:31:25.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter44.html</loc>
-    <lastmod>2025-06-30T04:12:26.936Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter45.html</loc>
-    <lastmod>2025-06-30T04:16:42.344Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter46.html</loc>
-    <lastmod>2025-06-30T04:21:51.403Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter47.html</loc>
-    <lastmod>2025-06-30T08:34:02.227Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/summary.html</loc>
-    <lastmod>2025-07-01T11:55:07.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/references.html</loc>
-    <lastmod>2025-04-25T22:24:50.688Z</lastmod>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/index.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter1.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter2.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter3.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter4.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter5.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter6.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter7.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter8.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter9.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter10.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter11.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter12.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter13.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter14.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter15.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter16.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter17.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter18.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter19.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter20.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter21.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter22.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter23.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter24.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter25.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter26.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter27.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter28.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter29.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter31.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter32.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter33.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter34.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter35.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter36.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter37.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter38.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter39.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter40.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter41.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter42.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter43.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter44.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter46.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter47.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/summary.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/references.html</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter39</loc>
+  <lastmod>2025-07-05T08:47:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
