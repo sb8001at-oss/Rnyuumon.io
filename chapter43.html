@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.37">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>43&nbsp; Quarto：デプロイ – R入門</title>
 <style>
 /* Default styles provided by pandoc.
@@ -76,6 +79,7 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -102,7 +106,8 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-64effab518a5b3d251254b1037208a96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -127,14 +132,20 @@ div.csl-indent {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-M8N5QERSYQ"></script><script type="text/javascript">
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-M8N5QERSYQ"></script>
+
+<script type="text/javascript">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </script>
+
+
 </head>
+
 <body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
@@ -300,7 +311,9 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -311,16 +324,20 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R入門</a> 
         <div class="sidebar-tools-main tools-wide">
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-<li>
+          <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/sb8001at-oss/Rnyuumon">
             ソースコード
             </a>
@@ -331,11 +348,11 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             </a>
           </li>
       </ul>
-</div>
+    </div>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-<li>
+          <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
               <i class="bi bi-twitter pe-1"></i>
             Twitter
@@ -348,7 +365,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             </a>
           </li>
       </ul>
-</div>
+    </div>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -360,7 +377,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">はじめに</span></a>
@@ -374,8 +391,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Rのインストール</span></span></a>
@@ -484,7 +501,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -493,8 +510,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter19.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">apply関数群</span></span></a>
@@ -525,7 +542,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -534,8 +551,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter24.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">グラフ作成：高レベルグラフィック関数</span></span></a>
@@ -560,7 +577,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
@@ -569,8 +586,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter28.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">確率分布と乱数</span></span></a>
@@ -613,7 +630,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -622,8 +639,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter35.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">R markdown</span></span></a>
@@ -678,7 +695,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
@@ -687,8 +704,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter44.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">purrr</span></span></a>
@@ -737,7 +754,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
@@ -746,8 +763,8 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
-<li class="sidebar-item">
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Tips_ParallelComputing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">並列演算（Parallel Computing）</span></a>
@@ -802,7 +819,7 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
       </ul>
-</li>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
@@ -816,30 +833,33 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   </div>
 </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#connect-cloud" id="toc-connect-cloud" class="nav-link active" data-scroll-target="#connect-cloud"><span class="header-section-number">43.1</span> Connect Cloud</a></li>
-  <li>
-<a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">43.2</span> Github Pages</a>
+  <li><a href="#connect-cloud" id="toc-connect-cloud" class="nav-link active" data-scroll-target="#connect-cloud"><span class="header-section-number">43.1</span> Connect Cloud</a></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">43.2</span> Github Pages</a>
   <ul>
-<li><a href="#github-pages%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B" id="toc-github-pagesを設定する" class="nav-link" data-scroll-target="#github-pages%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B"><span class="header-section-number">43.2.2</span> Github Pagesを設定する</a></li>
-  </ul>
-</li>
-  <li><a href="#%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" id="toc-その他のサービスについて" class="nav-link" data-scroll-target="#%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="header-section-number">43.3</span> その他のサービスについて</a></li>
+  <li><a href="#github-pagesを設定する" id="toc-github-pagesを設定する" class="nav-link" data-scroll-target="#github-pagesを設定する"><span class="header-section-number">43.2.2</span> Github Pagesを設定する</a></li>
+  </ul></li>
+  <li><a href="#その他のサービスについて" id="toc-その他のサービスについて" class="nav-link" data-scroll-target="#その他のサービスについて"><span class="header-section-number">43.3</span> その他のサービスについて</a></li>
   <li><a href="#google-analytics" id="toc-google-analytics" class="nav-link" data-scroll-target="#google-analytics"><span class="header-section-number">43.4</span> Google Analytics</a></li>
   <li><a href="#google-search-console" id="toc-google-search-console" class="nav-link" data-scroll-target="#google-search-console"><span class="header-section-number">43.5</span> Google Search Console</a></li>
-  </ul></nav>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter35.html">R markdownとQuarto</a></li><li class="breadcrumb-item"><a href="./chapter43.html"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Quarto：デプロイ</span></a></li></ol></nav><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">
-<span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Quarto：デプロイ</span>
-</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter35.html">R markdownとQuarto</a></li><li class="breadcrumb-item"><a href="./chapter43.html"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Quarto：デプロイ</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Quarto：デプロイ</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -853,26 +873,33 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
   
 
 
-</header><p>WebsiteやBookをRenderし、HTMLを作成した後、そのHTMLをWeb上で公開すれば、世界中の人達がそのWebsiteやBookを読むことができます。HTMLをWeb上で公開するというのは、Webに繋がったコンピュータ（Webサーバー）にHTMLファイルを置き、Web上でこのHTMLファイルにアクセスができるようにすることです。このHTMLの公開のことを<strong><code>デプロイ</code></strong>と呼びます。</p>
+</header>
+
+
+<p>WebsiteやBookをRenderし、HTMLを作成した後、そのHTMLをWeb上で公開すれば、世界中の人達がそのWebsiteやBookを読むことができます。HTMLをWeb上で公開するというのは、Webに繋がったコンピュータ（Webサーバー）にHTMLファイルを置き、Web上でこのHTMLファイルにアクセスができるようにすることです。このHTMLの公開のことを<strong><code>デプロイ</code></strong>と呼びます。</p>
 <p>デプロイをするためには、Webサーバーが必要となります。自前でWebサーバーを準備することもできますが、通常はWebサーバーを運用しているサービスを利用することになります。</p>
 <p>Webサーバーを運用しているサービスには、<a href="https://aws.amazon.com/jp">Amazon web servise</a>や<a href="https://azure.microsoft.com/ja-jp">Microsoft Azure</a>などがありますが、いずれも有料です。Quartoで作成したHTML（Webサーバーで演算を行わないので、静的なHTMLと呼ばれます）をデプロイするのであれば、これらの有料サービスではなく、無料のサービスを利用することができます。</p>
 <p>無料のサービスには、Positが運営しているサービスである<a href="https://connect.posit.cloud/"><strong>Connect Cloud</strong></a>や、もっと汎用的にHTMLの公開に用いることができる<a href="https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site"><strong>Github Pages</strong></a>などがあります。</p>
 <p>これらの無料のサービスでは公開したHTMLは基本的にはWeb上に完全に公開されます。企業内など、特定のユーザーのみがアクセスできる設定にはできません。また、アクセス数に制限があり、高頻度でアクセスされると表示が遅くなったり、表示できなくなったりします。また、HTMLのサイズにも制限があります。</p>
 <p>とは言え、個人で作成するようなWebsiteやBookではアクセス制限に到達したり、HTMLのサイズが大きくなりすぎることはあまりないと思います。Quartoで作成したHTMLを公開する場合、とりあえずConnect CloudかGithub Pagesでデプロイすることを検討するとよいでしょう。</p>
-<section id="connect-cloud" class="level2" data-number="43.1"><h2 data-number="43.1" class="anchored" data-anchor-id="connect-cloud">
-<span class="header-section-number">43.1</span> Connect Cloud</h2>
+<section id="connect-cloud" class="level2" data-number="43.1">
+<h2 data-number="43.1" class="anchored" data-anchor-id="connect-cloud"><span class="header-section-number">43.1</span> Connect Cloud</h2>
 <p><a href="https://connect.posit.cloud/">Connect Cloud</a>にQuartoのHTMLをデプロイする場合には、まずConnect Cloudのアカウントを作成する必要があります。右上の「Sign Up」からアカウントを作成しましょう。Sign UpにはGooGleやGithubのアカウントを利用することもできます。</p>
 <p><a href="./image/connect_cloud_toppage.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./image/connect_cloud_toppage.png" class="img-fluid"></a></p>
 <p>次に、RStudio上でConnect Cloudのアカウントを登録します。OptionのPublishingの項目から、「Connect…」を選択しましょう。登録する際には<a href="https://rstudio.github.io/rsconnect/"><code>rsconnect</code></a>パッケージ<span class="citation" data-cites="rsconnect_bib">(<a href="#ref-rsconnect_bib" role="doc-biblioref">Atkins et al. 2024</a>)</span>が必要です。登録の際に<code>rsconnect</code>をインストールするかどうかを尋ねるウインドウが表示されますので、インストールしましょう。</p>
 <p>インストール後に再び「Connect…」を選択すると、接続するサービス（Connect Cloud、Posit Connectなど）が表示されるので、Connect Cloudを選択しましょう。選択するとブラウザ上でConnect Cloudへのログインが求められます。ログインするとRStudioの認証パスキーと接続を続けるためのボタンが表示されます。ボタンを押すとアクセスが認証されます（2026年9月時点では認証パスキーの入力を求められないので、ちょっと意味がよくわかりません）。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/setting_publishing_accounts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="RStudioにConnect Cloudのアカウントを登録する"><img src="./image/setting_publishing_accounts.png" class="img-fluid figure-img" alt="RStudioにConnect Cloudのアカウントを登録する"></a></p>
-<figcaption>RStudioにConnect Cloudのアカウントを登録する</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/setting_publishing_accounts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="RStudioにConnect Cloudのアカウントを登録する"><img src="./image/setting_publishing_accounts.png" class="img-fluid figure-img" alt="RStudioにConnect Cloudのアカウントを登録する"></a></p>
+<figcaption>RStudioにConnect Cloudのアカウントを登録する</figcaption>
+</figure>
 </div>
 <p>後はRStudioのウインドウの右上にある「Publish」ボタンを押すと、Connect CloudへHTMLがアップロードされます。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/publish_button.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Publishボタン"><img src="./image/publish_button.png" class="img-fluid figure-img" alt="Publishボタン"></a></p>
-<figcaption>Publishボタン</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/publish_button.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Publishボタン"><img src="./image/publish_button.png" class="img-fluid figure-img" alt="Publishボタン"></a></p>
+<figcaption>Publishボタン</figcaption>
+</figure>
 </div>
 <p>この他にGithubにアップロードしたqmdファイルやHTMLファイルをConnect Cloudからデプロイすることもできますが、Githubを用いるのであれば以下に紹介するより利用制限の緩いGithub Pagesを用いる方がよいでしょう。</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -889,12 +916,15 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>Quarto Pubは2026年12月31日までは存続し、2027年1月1日からはConnect Cloudへ移行する予定です。<a href="./chapter47.html">47章</a>で説明するshiny.ioと共に、元々は別々のサービスとして運営されていたものをConnect Cloudに一元化することを目的としているようです。shiny.ioのアプリは比較的簡単にConnect Cloudに移行できるようにされていますが、Quarto Pubからの移行の方法は現状提供されていません。ですので、Quarto Pubにデプロイ済みの文書をConnect Cloudにデプロイする場合には、元々のファイルをRStudioで開き、上記の「Publish」の機能を用いてアップロードし直す必要があります。</p>
 <p>以下にQuarto Pubの使い方についての記事を残しておきますが、2026年12月末以降は新しくアカウントを作ることができませんので、Connect Cloudを利用するとよいでしょう。</p>
-<section id="quarto-pubに文書をデプロイする2026年12月31日" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="quarto-pubに文書をデプロイする2026年12月31日">Quarto Pubに文書をデプロイする（～2026年12月31日）</h3>
+<section id="quarto-pubに文書をデプロイする2026年12月31日" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="quarto-pubに文書をデプロイする2026年12月31日">Quarto Pubに文書をデプロイする（～2026年12月31日）</h3>
 <p><a href="https://quartopub.com/">Quarto Pub</a>はPositが運営しているサービスで、Rstudioを用いていれば簡単にHTMLをデプロイすることができます。</p>
 <p>Quarto Pubにデプロイする場合、まずはQuarto Pubにアカウントを作成する必要があります。まずはQuarto Pubのホームページにアクセスし、「Sign Up」を選択しましょう。Quarto PubのログインにはGoogleやGithubのアカウントを用いることもできます。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/quarto_pub.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Quarto Pubのページからアカウントを作成する"><img src="./image/quarto_pub.png" class="img-fluid figure-img" alt="Quarto Pubのページからアカウントを作成する"></a></p>
-<figcaption>Quarto Pubのページからアカウントを作成する</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/quarto_pub.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Quarto Pubのページからアカウントを作成する"><img src="./image/quarto_pub.png" class="img-fluid figure-img" alt="Quarto Pubのページからアカウントを作成する"></a></p>
+<figcaption>Quarto Pubのページからアカウントを作成する</figcaption>
+</figure>
 </div>
 <p>Quarto Pubにアカウントを作成した後、TerminalでWebsiteやBookのProjectのディレクトリに移動した後、<code>quarto publish</code>コマンドを用いることでそのProject内の.qmdファイルがHTMLにRenderされ、そのHTMLがQuarto Pubにデプロイされます。</p>
 <div class="cell">
@@ -906,20 +936,27 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </div>
 </div>
 <p><code>quarto publish</code>コマンドを入力すると、Terminal上でQuarto Pubへの認証が行われます。必要な情報を入力すると、作成したQuarto PubのアカウントにProjectの.qmdもしくは指定した.qmdファイルがHTMLにRenderされた後、デプロイされます。</p>
-</section><section id="アクセストークンaccess-token" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="アクセストークンaccess-token">アクセストークン（Access Token）</h3>
+</section>
+<section id="アクセストークンaccess-token" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="アクセストークンaccess-token">アクセストークン（Access Token）</h3>
 <p>上記のQuarto Pubの認証では、アクセストークン（Access Token）というものが要求されます。アクセストークンは上記のQuarto Pubのアカウントにログインし、アカウント内のページから取得することができます。認証の途中で入力を求められるため、コピーしておいてテキストとしてTerminalで貼り付けるとよいでしょう。詳細については<a href="https://quarto.org/docs/publishing/quarto-pub.html#access-tokens">QuartoのGuide</a>のページをご参照ください。</p>
-</section><section id="quarto-pubでのページの管理" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="quarto-pubでのページの管理">Quarto Pubでのページの管理</h3>
+</section>
+<section id="quarto-pubでのページの管理" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="quarto-pubでのページの管理">Quarto Pubでのページの管理</h3>
 <p>Quarto Pubにログインすると、デプロイしたProjectの一覧が表示されます。このページから、デプロイしたページに移動したり、デプロイしたProjectを削除することができます。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/quarto_pub_loggedin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Quarto Pub：ページの管理"><img src="./image/quarto_pub_loggedin.png" class="img-fluid figure-img" alt="Quarto Pub：ページの管理"></a></p>
-<figcaption>Quarto Pub：ページの管理</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/quarto_pub_loggedin.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Quarto Pub：ページの管理"><img src="./image/quarto_pub_loggedin.png" class="img-fluid figure-img" alt="Quarto Pub：ページの管理"></a></p>
+<figcaption>Quarto Pub：ページの管理</figcaption>
+</figure>
 </div>
 </section>
 </div>
 </div>
 </div>
-</section><section id="github-pages" class="level2" data-number="43.2"><h2 data-number="43.2" class="anchored" data-anchor-id="github-pages">
-<span class="header-section-number">43.2</span> Github Pages</h2>
+</section>
+<section id="github-pages" class="level2" data-number="43.2">
+<h2 data-number="43.2" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">43.2</span> Github Pages</h2>
 <p>Github Pagesは、リモートリポジトリサービスであるGithubが運用している、静的なHTMLをデプロイするためのサービスです。Github PagesではGithubのリモートリポジトリに保存したHTMLを公開することができます。</p>
 <p>Githubの使い方についてはこのテキストの範囲を越えるため詳細については説明しませんが、Github Pagesを用いるために最低限必要なことのみ以下のcalloutブロックで説明します。</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -940,18 +977,25 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <li><a href="https://backlog.com/ja/git-tutorial/">サル先生のGit入門</a></li>
 </ul>
 <p>ここでは、QuartoをGithub Pagesで公開するのに必要な部分だけ簡単に説明します。</p>
-<section id="gitのインストール" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="gitのインストール">Gitのインストール</h3>
+<section id="gitのインストール" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gitのインストール">Gitのインストール</h3>
 <p>Githubを使い始める前に、まずはGitをインストールしましょう。<a href="https://git-scm.com/downloads">Gitの公式ページ</a>からインストーラーをダウンロードし、インストールします。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/git_download.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Gitのダウンロード"><img src="./image/git_download.png" class="img-fluid figure-img" alt="Gitのダウンロード"></a></p>
-<figcaption>Gitのダウンロード</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/git_download.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Gitのダウンロード"><img src="./image/git_download.png" class="img-fluid figure-img" alt="Gitのダウンロード"></a></p>
+<figcaption>Gitのダウンロード</figcaption>
+</figure>
 </div>
 <p>Githubが提供している<a href="https://desktop.github.com/download/">Github Desktop</a>にもGitが含まれています。Githubを使う前提であれば、Github Desktopをダウンロードし、インストールしてもよいでしょう。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/github_desktop_downloads.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Github Desktopのダウンロード"><img src="./image/github_desktop_downloads.png" class="img-fluid figure-img" alt="Github Desktopのダウンロード"></a></p>
-<figcaption>Github Desktopのダウンロード</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/github_desktop_downloads.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Github Desktopのダウンロード"><img src="./image/github_desktop_downloads.png" class="img-fluid figure-img" alt="Github Desktopのダウンロード"></a></p>
+<figcaption>Github Desktopのダウンロード</figcaption>
+</figure>
 </div>
-</section><section id="gitユーザー名とメールアドレスの登録" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="gitユーザー名とメールアドレスの登録">Git：ユーザー名とメールアドレスの登録</h3>
+</section>
+<section id="gitユーザー名とメールアドレスの登録" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gitユーザー名とメールアドレスの登録">Git：ユーザー名とメールアドレスの登録</h3>
 <p>Gitをインストールすると、TerminalからGitのコマンドを利用できるようになります。Gitのコマンドを利用して、Terminalからユーザー名とメールアドレスを登録します。</p>
 <p>ユーザー名は、以下のように<code>user.name</code>として文字列で指定して登録します。以下の例ではユーザー名は「XXXXX」となります。</p>
 <div class="cell">
@@ -971,22 +1015,32 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <pre class="terminal cell-code"><code>git config --global user.email "XXXXX.@xjorv.com"</code></pre>
 </div>
 </div>
-</section><section id="githubのアカウントの取得" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="githubのアカウントの取得">Githubのアカウントの取得</h3>
+</section>
+<section id="githubのアカウントの取得" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="githubのアカウントの取得">Githubのアカウントの取得</h3>
 <p>次に、<a href="https://github.com/">Githubのアカウント</a>を作成します。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/github_signup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Githubアカウントの作成"><img src="./image/github_signup.png" class="img-fluid figure-img" alt="Githubアカウントの作成"></a></p>
-<figcaption>Githubアカウントの作成</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/github_signup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Githubアカウントの作成"><img src="./image/github_signup.png" class="img-fluid figure-img" alt="Githubアカウントの作成"></a></p>
+<figcaption>Githubアカウントの作成</figcaption>
+</figure>
 </div>
-</section><section id="githubにリモートリポジトリを作成する" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="githubにリモートリポジトリを作成する">Githubにリモートリポジトリを作成する</h3>
+</section>
+<section id="githubにリモートリポジトリを作成する" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="githubにリモートリポジトリを作成する">Githubにリモートリポジトリを作成する</h3>
 <p>作成したアカウントでGithubにログインし、リモートリポジトリを作成します。リモートリポジトリとは、開発しているプログラムを保存するWeb上のフォルダのようなものです。</p>
 <p>Githubのアカウントのページで「repositories」のタブに移動すると、「new」というボタンがあります。このボタンを押すことでレポジトリ作成のページに移行します。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/github_new_repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="新しいリモートレポジトリを作成する"><img src="./image/github_new_repo.png" class="img-fluid figure-img" alt="新しいリモートレポジトリを作成する"></a></p>
-<figcaption>新しいリモートレポジトリを作成する</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/github_new_repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="新しいリモートレポジトリを作成する"><img src="./image/github_new_repo.png" class="img-fluid figure-img" alt="新しいリモートレポジトリを作成する"></a></p>
+<figcaption>新しいリモートレポジトリを作成する</figcaption>
+</figure>
 </div>
 <p>この「Create a new repository」のページ上で、Repository nameをつけます。Repository nameは英語名で、スペースを入れないものとします。仮に「test」というリポジトリを作成します。</p>
 <p>また、Github Pagesで広くネットにWebsiteを公開する場合、レポジトリはPublic、つまり誰でも閲覧できる形で作成する必要があります。</p>
-</section><section id="gitの設定とcommit" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="gitの設定とcommit">gitの設定とcommit</h3>
+</section>
+<section id="gitの設定とcommit" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gitの設定とcommit">gitの設定とcommit</h3>
 <p>TerminalでProjectのディレクトリに移動し、<code>git init</code>と入力します。このコマンドを用いることで、Gitに必要なファイルがそのディレクトリに作成されます。</p>
 <div class="cell">
 <div class="code-with-filename">
@@ -1017,12 +1071,16 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <pre class="terminal cell-code"><code>git commit -m "commit message"</code></pre>
 </div>
 </div>
-</section><section id="githubのリモートリポジトリとgitを関連付ける" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="githubのリモートリポジトリとgitを関連付ける">GithubのリモートリポジトリとGitを関連付ける</h3>
+</section>
+<section id="githubのリモートリポジトリとgitを関連付ける" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="githubのリモートリポジトリとgitを関連付ける">GithubのリモートリポジトリとGitを関連付ける</h3>
 <p>Web上のリモートリポジトリであるGithubと自分のPC（ローカル）で機能するローカルレポジトリであるGitを関連付けることで、Terminalから簡単にGithubへとファイルを転送することができるようになります。</p>
 <p>Github上に作成したリモートリポジトリに移動すると以下のように関連付けの方法が表示されます。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/github_remote_add.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Githubのリモートリポジトリに表示されるコマンド"><img src="./image/github_remote_add.png" class="img-fluid figure-img" alt="Githubのリモートリポジトリに表示されるコマンド"></a></p>
-<figcaption>Githubのリモートリポジトリに表示されるコマンド</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/github_remote_add.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Githubのリモートリポジトリに表示されるコマンド"><img src="./image/github_remote_add.png" class="img-fluid figure-img" alt="Githubのリモートリポジトリに表示されるコマンド"></a></p>
+<figcaption>Githubのリモートリポジトリに表示されるコマンド</figcaption>
+</figure>
 </div>
 <p>上記のコマンドに従い、<code>git remote</code>コマンドを実行します。</p>
 <div class="cell">
@@ -1034,8 +1092,9 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </div>
 </div>
 <p>これでcommitしたレポジトリをリモートリポジトリにアップロードする準備が整いました。</p>
-</section><section id="githubのリモートリポジトリにフォルダの内容をアップロードする" class="level3" data-number="43.2.1"><h3 data-number="43.2.1" class="anchored" data-anchor-id="githubのリモートリポジトリにフォルダの内容をアップロードする">
-<span class="header-section-number">43.2.1</span> Githubのリモートリポジトリにフォルダの内容をアップロードする</h3>
+</section>
+<section id="githubのリモートリポジトリにフォルダの内容をアップロードする" class="level3" data-number="43.2.1">
+<h3 data-number="43.2.1" class="anchored" data-anchor-id="githubのリモートリポジトリにフォルダの内容をアップロードする"><span class="header-section-number">43.2.1</span> Githubのリモートリポジトリにフォルダの内容をアップロードする</h3>
 <p>リモートリポジトリとの関連付けが終わったら、ファイルをリモートリポジトリに<strong>push</strong>（アップロード）します。<code>git push</code>コマンドを用いて、先ほどのリモートリポジトリにファイルをアップロードします。</p>
 <div class="cell">
 <div class="code-with-filename">
@@ -1050,13 +1109,15 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<section id="github-pagesを設定する" class="level3" data-number="43.2.2"><h3 data-number="43.2.2" class="anchored" data-anchor-id="github-pagesを設定する">
-<span class="header-section-number">43.2.2</span> Github Pagesを設定する</h3>
+<section id="github-pagesを設定する" class="level3" data-number="43.2.2">
+<h3 data-number="43.2.2" class="anchored" data-anchor-id="github-pagesを設定する"><span class="header-section-number">43.2.2</span> Github Pagesを設定する</h3>
 <p>GithubのリモートリポジトリにファイルをPushしたら、次にリモートリポジトリのページからGithub Pagesの設定を行います。</p>
 <p>Githubにログインし、ファイルをPushしたリモートリポジトリに移動します。次に、上のタブから「Setting」を選択し、左のカラムから「Pages」を選択します。選択すると以下のようなページに移動します。</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="./image/github_pages_setting.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Github Pagesの設定"><img src="./image/github_pages_setting.png" class="img-fluid figure-img" alt="Github Pagesの設定"></a></p>
-<figcaption>Github Pagesの設定</figcaption></figure>
+<figure class="figure">
+<p><a href="./image/github_pages_setting.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Github Pagesの設定"><img src="./image/github_pages_setting.png" class="img-fluid figure-img" alt="Github Pagesの設定"></a></p>
+<figcaption>Github Pagesの設定</figcaption>
+</figure>
 </div>
 <p>このページでBranchを<code>main</code>（上の図では<code>master</code>になっています）、<code>/(root)</code>もしくは<code>/docs</code>から選択します。rootの場合はProjectのディレクトリにあるHTMLを、/docsの場合はProjectのディレクトリに作成した/docsのディレクトリ内のHTMLをそれぞれデプロイすることになります。</p>
 <p>QuartoではRenderで出力するHTMLは<code>_site</code>や<code>_book</code>のフォルダ内に保存されるため、以下のようにYAMLで<code>docs</code>フォルダに保存するようにしておくとよいでしょう。</p>
@@ -1071,11 +1132,14 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 </div>
 </div>
 <p>フォルダを選択し、「Save」を選択すると、HTMLがデプロイされます。少し待って、表示されるページのリンクを選択すれば、作成したHTMLにWeb上でアクセスできます。</p>
-</section></section><section id="その他のサービスについて" class="level2" data-number="43.3"><h2 data-number="43.3" class="anchored" data-anchor-id="その他のサービスについて">
-<span class="header-section-number">43.3</span> その他のサービスについて</h2>
+</section>
+</section>
+<section id="その他のサービスについて" class="level2" data-number="43.3">
+<h2 data-number="43.3" class="anchored" data-anchor-id="その他のサービスについて"><span class="header-section-number">43.3</span> その他のサービスについて</h2>
 <p><a href="https://quarto.org/docs/publishing/">QuartoのGuide</a>では、HTMLをデプロイするためのサービスの例として、<a href="https://www.netlify.com/">Neltify</a>、<a href="https://posit.co/products/enterprise/connect/">Posit Connect</a>、<a href="https://posit.cloud/">Posit Cloud</a>、<a href="https://www.atlassian.com/software/confluence">Confluence</a>、<a href="https://huggingface.co/">hugging face</a>、<a href="https://firebase.google.com/">Firebase</a>、<a href="https://www.site44.com/">Site44</a>、<a href="https://aws.amazon.com/jp/s3">Amazon S3</a>などが挙げられています。いずれもそれぞれ使い方が異なり、有料のものも含まれています。作成するページのトラフィックが非常に大きいようならこれらのサービスを用いることを検討してみてもよいでしょう。また、日本では<a href="https://www.sakura.ad.jp/">さくらインターネット</a>などのクラウドサービスを用いてもデプロイすることができます。</p>
-</section><section id="google-analytics" class="level2" data-number="43.4"><h2 data-number="43.4" class="anchored" data-anchor-id="google-analytics">
-<span class="header-section-number">43.4</span> Google Analytics</h2>
+</section>
+<section id="google-analytics" class="level2" data-number="43.4">
+<h2 data-number="43.4" class="anchored" data-anchor-id="google-analytics"><span class="header-section-number">43.4</span> Google Analytics</h2>
 <p>作成したページのアクセスを解析するサービスが<a href="https://developers.google.com/analytics?hl=ja">Google Analytics</a>です。Google Analyticsを利用するには、まずGoogleのアカウントでGoogle Analyticsにログインします。次に、設定の画面からアカウントとプロパティを作成します。このプロパティがページへのアクセスを測定する機能に相当します。</p>
 <p>プロパティには、<a href="https://support.google.com/analytics/answer/9539598?hl=ja">tracking ID</a>か<a href="https://support.google.com/analytics/answer/9539598?hl=en">tag measurement ID</a>があります。このIDのいずれかを以下のようにYAMLを設定することで、Google Analyticsのページからアクセスを解析することができます。</p>
 <div class="cell">
@@ -1087,8 +1151,9 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">google-analytics</span><span class="kw">:</span><span class="at"> </span><span class="st">"G-XXXXXXXXXX"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-</section><section id="google-search-console" class="level2" data-number="43.5"><h2 data-number="43.5" class="anchored" data-anchor-id="google-search-console">
-<span class="header-section-number">43.5</span> Google Search Console</h2>
+</section>
+<section id="google-search-console" class="level2" data-number="43.5">
+<h2 data-number="43.5" class="anchored" data-anchor-id="google-search-console"><span class="header-section-number">43.5</span> Google Search Console</h2>
 <p>Quarto PubやGithub Pagesに登録したウェブページはそのままではGoogleの検索にはかかりません。この検索の設定を行うためのツールが<a href="https://search.google.com/search-console/about?hl=ja">Google Search Console</a>です。Google Search Consoleにページを登録し、sitemapというものを作成すると、Googleの検索にページが登録されるようになります。詳しくは、こちらの<a href="https://note.com/mahiro001/n/nbcbd001b630f">noteの記事</a>や、<a href="https://qiita.com/NightOwl/items/a7f972ba70f1ad037d65">Qiitaの記事</a>をご参照下さい。</p>
 
 
@@ -1099,7 +1164,10 @@ gtag('config', 'G-M8N5QERSYQ', { 'anonymize_ip': true});
 Atkins, Aron, Toph Allen, Hadley Wickham, Jonathan McPherson, and JJ Allaire. 2024. <em>Rsconnect: Deploy Docs, Apps, and APIs to ’Posit Connect’, ’Shinyapps.io’, and ’RPubs’</em>. <a href="https://CRAN.R-project.org/package=rsconnect">https://CRAN.R-project.org/package=rsconnect</a>.
 </div>
 </div>
-</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1562,7 +1630,9 @@ Atkins, Aron, Toph Allen, Hadley Wickham, Jonathan McPherson, and JJ Allaire. 20
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="./chapter42.html" class="pagination-link" aria-label="Quarto：WebsiteとBook">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Quarto：WebsiteとBook</span></span>
       </a>          
@@ -1797,26 +1867,28 @@ Atkins, Aron, Toph Allen, Hadley Wickham, Jonathan McPherson, and JJ Allaire. 20
 <span id="cb11-222"><a href="#cb11-222" aria-hidden="true" tabindex="-1"></a>Quarto PubやGithub Pagesに登録したウェブページはそのままではGoogleの検索にはかかりません。この検索の設定を行うためのツールが<span class="co">[</span><span class="ot">Google Search Console</span><span class="co">](https://search.google.com/search-console/about?hl=ja)</span>です。Google Search Consoleにページを登録し、sitemapというものを作成すると、Googleの検索にページが登録されるようになります。詳しくは、こちらの<span class="co">[</span><span class="ot">noteの記事</span><span class="co">](https://note.com/mahiro001/n/nbcbd001b630f)</span>や、<span class="co">[</span><span class="ot">Qiitaの記事</span><span class="co">](https://qiita.com/NightOwl/items/a7f972ba70f1ad037d65)</span>をご参照下さい。</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
+<footer class="footer">
+  <div class="nav-footer">
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
-<li class="nav-item">
+    <li class="nav-item">
  © xjorv, 2025
   </li>  
 </ul>
-</div>   
+    </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-<li class="nav-item">
+    <li class="nav-item">
  <a href="https://quarto.org/">Quarto</a>を用いてこの本を作成しました
   </li>  
 </ul>
-</div>
+    </div>
   </div>
-</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -1848,6 +1920,8 @@ Atkins, Aron, Toph Allen, Hadley Wickham, Jonathan McPherson, and JJ Allaire. 20
   
 })();
           </script>
+
+
 
 
 </body></html>

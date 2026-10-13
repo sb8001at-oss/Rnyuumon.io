@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/chapter51.html</loc>
-    <lastmod>2026-05-12T21:46:10.702Z</lastmod>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/references.html</loc>
+    <lastmod>2026-10-12T21:59:12.952Z</lastmod>
   </url>
   <url>
     <loc>https://sb8001at-oss.github.io/Rnyuumon.io/summary.html</loc>
     <lastmod>2026-10-13T13:10:02.577Z</lastmod>
   </url>
   <url>
-    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/references.html</loc>
-    <lastmod>2026-10-12T21:59:12.952Z</lastmod>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_mall.html</loc>
+    <lastmod>2026-07-04T09:15:57.061Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_R6class.html</loc>
+    <lastmod>2026-06-10T11:31:57.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_ParallelComputing.html</loc>
+    <lastmod>2026-05-14T11:47:24.310Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_ROC.html</loc>
+    <lastmod>2026-10-13T13:09:58.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_S3class.html</loc>
+    <lastmod>2026-05-13T11:19:33.469Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_S4class.html</loc>
+    <lastmod>2026-06-05T10:50:59.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_S7class.html</loc>
+    <lastmod>2026-06-17T12:50:08.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_shinylive.html</loc>
+    <lastmod>2026-09-06T08:35:10.101Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sb8001at-oss.github.io/Rnyuumon.io/Tips_systems.html</loc>
+    <lastmod>2026-05-14T13:33:00.544Z</lastmod>
   </url>
 </urlset>
